@@ -143,6 +143,7 @@ button {
   
 button:hover {
     background-color: #1abc9c;
+    cursor: pointer;
 }
 
 .icons {
@@ -248,6 +249,7 @@ strong {
 
 .arrow:hover {
     transform: scale(1.25);
+    cursor: pointer;
 }
 
 
@@ -331,6 +333,7 @@ strong {
     font-size: 12pt;
     letter-spacing: 0.15em;
 }
+
 
 .subscribe_input {
     margin-top: 35px;
