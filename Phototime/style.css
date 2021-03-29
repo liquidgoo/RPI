@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: "GothamRounded-Book";
+    src: url("assets/fonts/GothamRounded-Book.otf");
+}
+@font-face {
+    font-family: "GothamRounded";
+    src: url("assets/fonts/GothamRounded-Medium.otf"); 
+}
+@font-face {
+    font-family: "GothamRounded";
+    src: url("assets/fonts/GothamRounded-Bold.otf");
+    font-weight: bold;
+} 
+*{
+    margin: 0px;
+    letter-spacing: 0.15em;
+}
+body {
+    font-family: "GothamRounded";
+    display: flex;
+    justify-content: center;    
+}
+
+.wrapper {
+    width: 1280px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease 0s;
+}
+
+a:hover {
+    color: #16a085;
+}
+
+h2 {
+    margin-block-end: 10px;
+    margin-block-start: 0px;
+    color: #16a085;
+    text-transform: uppercase;
+    font-size: 13.5pt;
+    text-indent: 0px;
+    font-weight: bold;
+}
+
+header {
+    margin : 40px 0px 0px 0px;
+    width: 1280px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+nav {
+    display: flex;
+}
+
+.menu {
+    margin: 0px 19.25% 0px 21.25%;
+    justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+}
+.nav {
+    margin-top: 23px
+}
+
+.nav-photoapp {
+    margin-left: -0px;
+    margin-right: 17.5px;
+}
+
+.nav-camera {
+    margin: 0px 13.5px 0px 19.5px;
+}
+
+.nav-design {
+    margin-left: 21px;
+    margin-right: 6px;
+}
+
+.nav-download {
+    margin-left: 6px;
+}
+
+.your-life {
+    height: 745px;
+    background: url("assets/background.png") center/cover no-repeat;
+}
+
+.motto-wrapper {
+    padding: 343px 0px 0px 0px;
+    color:white;
+    text-align: center;
+}
+
+.motto_title {
+    line-height: 18pt;
+    font-size: 27pt;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 30.4688%;
+    color: white;
+}
+
+.motto_subtitle{
+    margin-top: 22px;
+    margin-bottom: 29px;
+    margin-left: 1px;
+    text-transform: lowercase;
+    font-family: "GothamRounded";
+    font-size: 12pt;
+    line-height: 8pt;
+}
+
+button {
+    background-color: #16a085;
+    font-family: "GothamRounded";
+    font-size: 9pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 3px;
+    padding: 22px 30px 19px;
+    transition: background-color 0.3s ease 0s;
+    border-width: 0px;
+    line-height: 6pt;
+}
+  
+button:hover {
+    background-color: #1abc9c;
+}
+
+.icons {
+    margin-top: 210px;
+    justify-content: space-between;
+    margin-left: 46.1719%;
+    margin-right: 46.1719%;
+}
+
+.social-icon {
+    padding-top: 12px;
+    transition: all 0.3s ease 0s;
+}
+.social-icon:hover{
+    padding-top: 4px;
+}
+
+
+.rappresent {
+    background: url(assets/phone1.png);
+    display: flex;
+    height: 492px;
+    text-align: left;
+}
+
+.rappresent_content {
+    margin-left: 10%;
+    margin-top: 109px;
+}
+
+p {
+    font-family: "GothamRounded-Book";
+    font-size: 9pt;
+    line-height: 18pt;
+}
+
+.rappresent_subtitle {
+    margin-top: 39px;
+    margin-bottom: 41px;
+    margin-left: -1px;
+}
+
+strong {
+    font-family: "GothamRounded";
+}
+
+.get-started {
+    padding: 24px 43px 19px;
+    margin-left: 1px;
+}
+
+.design {
+    background-color: white;
+    display: flex;
+    background: url(assets/phone2.png);
+    height: 558px;
+}
+
+.design_content {
+    margin-left: 766px;
+    margin-top: 142px;
+}
+
+.desitn_title {
+    line-height: 12pt;
+}
+
+.design_subtitle {
+    margin-top: 35px;
+    line-height: 17pt;
+    margin-left: 2px;
+    margin-bottom: 37px;
+}
+
+.learn-more {
+    padding: 22px 47px 21px 43px;
+    margin-left: 1px;
+    border-radius: 0px;
+    margin-bottom: 39px;
+}
+
+.pages {
+    display: flex;
+    font-weight: bold;
+    margin-left: 1px;
+}
+
+.page {
+    letter-spacing: 2px;
+}
+
+.arrows {
+    margin-left: 1px;
+    margin-top: 1px;
+}
+.design_right-arrow {
+    margin-left: 14px;
+}
+
+.arrow{
+    transition: all 0.3s ease 0s;
+}
+
+.arrow:hover {
+    transform: scale(1.25);
+}
+
+
+.our-community {
+    background-color: #f5f6f7;
+    display: flex;
+    height: 484px;
+}
+
+.our-community_content {
+    margin-top: 95px;
+    margin-left: 128px;
+    display: flex;
+}
+
+.our-community_text{
+    margin-top: 70px;
+    align-content: center;
+}
+
+.our-community_icon {
+    margin-left: 59px;
+}
+
+.our-community_title {
+    color: black;
+    font-size: 12pt;
+    line-height: 8pt;
+    margin-top: 29px;
+    margin-bottom: 23px;
+}
+.our-community_subtitle {
+    font-size: 7.5pt;
+    font-family: "GothamRounded";
+    text-align: center;
+    line-height: 9pt;
+    margin-left: 1px;
+}
+.images_wrapper {
+    margin-left: 80px;
+    width: 765px;
+}
+
+.our-community_arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+}
+
+.our-community_left-arrow {
+    margin-right: 16px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe {
+    background: url("assets/subscribe_background.png");
+    display: flex;
+    height: 789px;
+    justify-content: center;
+}
+
+.subscribe_content {
+    margin-top: 353px;
+    margin-left: 4px;
+}
+
+.subscribe_title {
+    color: white;
+    font-size: 18pt;
+    line-height: 12pt;
+}
+::placeholder {
+    text-transform: uppercase;
+    color: black;
+    font-family: "GothamRounded";
+    font-weight: normal;
+    font-size: 12pt;
+    letter-spacing: 0.15em;
+}
+
+.subscribe_input {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    margin-left: -7px;
+}
+
+.email {
+    border-radius: 3px 0px 0px 3px;
+    border-width: 0px;
+    padding-left: 22px;
+    width: 256px;
+    height: 58px;
+    font-size: 12pt;
+    font-family: "GothamRounded";
+}
+
+.confirm {
+    border-width: 0px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: #16a085;
+    padding: 24px 20px 20px 23px;
+    width: 20px;
+    height: 16px;
+    transition: background-color 0.3s ease 0s;
+}
+
+.confirm:hover {
+    background-color: #1abc9c;
+}
+
+.download {
+    background-color: #f5f6f7;
+    height: 396px;
+    display: flex;
+    justify-content: center;  
+}
+
+.download_content {
+    margin-top: 93px;
+    text-align: center;
+}
+
+.download_title {
+    color: black;
+    font-size: 15pt;
+    line-height: 10pt;
+}
+
+.download_subtitle {
+    text-transform: uppercase;
+    margin-top: 11px;
+    font-family: "GothamRounded";
+    line-height: 17pt;
+}
+
+.downloads {
+    margin-top: 41px;
+    margin-left: -2px;
+    display: flex;
+    justify-content: center;
+}
+
+.download_button {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+}
+
+.download_button:hover {
+    transform: scale(1.05);
+}
+
+.text_download {
+    border-radius: 3px 0px 0px 3px;
+    background-color: #1abc9c;
+    width: 240px;
+    height: 56px;
+    font-size: 12pt;
+    line-height: 8pt;
+    padding-left: 23px;
+    padding-right: 75px;
+    padding-top: 24px;
+}
+
+.download_icon {
+    border-radius: 0px 3px 3px 0px;
+    height: 56px;
+    width: 56px;
+    padding-top: 16px;
+    padding-left: 17px
+}
+
+.download_android {
+    margin-left: 26px;
+}
+
+.android_text {
+    font-size: 13.5pt;
+    line-height: 9pt;
+    padding-top: 20px;
+    padding-left: 29px;
+    padding-right: 66px;
+}
+
+.android {
+    padding-top: 14px;
+    padding-left: 16px;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    height: 131px;
+}
+
+.footer_content {
+    margin-top: 38px;
+    display: flex;
+}
+
+.footer_text{
+    margin-top: 10px;
+    margin-left: 126px;
+    margin-right: 575px;
+    white-space: nowrap;
+}
+
+.footer_link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10.5pt;
+    line-height: 7pt;
+}
+
+.bar {
+    color: #16a085;
+    margin-left: 6.5px;
+    margin-right: 6.5px;
+}
+
+.copyright {
+    font-family: "GothamRounded";
+    font-weight: bold;
+    font-size: 10.5pt;
+    line-height: 7pt;
+    margin-top: 27px;
+}
