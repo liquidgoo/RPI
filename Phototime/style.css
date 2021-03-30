@@ -53,8 +53,6 @@ header {
     margin : 40px 0px 0px 0px;
     width: 1280px;
     position: absolute;
-    display: flex;
-    flex-direction: column;
 }
 h1 {
     text-transform: uppercase;
@@ -127,7 +125,7 @@ nav {
     line-height: 8pt;
 }
 
-button {
+button {    
     background-color: #16a085;
     font-family: "GothamRounded";
     font-size: 9pt;
@@ -170,7 +168,7 @@ button:hover {
 }
 
 .rappresent_content {
-    margin-left: 10%;
+    margin-left: 10.05%;
     margin-top: 109px;
 }
 
@@ -214,18 +212,19 @@ strong {
 .design_subtitle {
     margin-top: 35px;
     line-height: 17pt;
-    margin-left: 2px;
+    margin-left: 3px;
     margin-bottom: 37px;
 }
 
 .learn-more {
-    padding: 22px 47px 21px 43px;
+    padding: 22px 48px 21px 43px;
     margin-left: 1px;
     border-radius: 0px;
     margin-bottom: 39px;
 }
 
 .pages {
+    font-family: "GothamRounded";
     display: flex;
     font-weight: bold;
     margin-left: 1px;
@@ -266,6 +265,7 @@ strong {
 }
 
 .our-community_text{
+    margin-left: 1px;
     margin-top: 70px;
     align-content: center;
 }
@@ -317,7 +317,7 @@ strong {
 
 .subscribe_content {
     margin-top: 353px;
-    margin-left: 4px;
+    margin-left: 5px;
 }
 
 .subscribe_title {
@@ -458,7 +458,7 @@ footer{
 
 .footer_text{
     margin-top: 10px;
-    margin-left: 126px;
+    margin-left: 127px;
     margin-right: 575px;
     white-space: nowrap;
 }
