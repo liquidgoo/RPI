@@ -23,17 +23,17 @@ function setBgGreet() {
         hour = today.getHours;
 
     if (hour < 6) {
-        document.body.style.backgroundImage = "url(https://github.com/irinainina/ready-projects/blob/momentum/momentum/assets/images/night/01.jpg)";
+        document.body.style.backgroundImage = 'url(assets/night/01.jpg)';
         greeting.textContent = "Good? Night";
     } else if (hour < 12) {
-        document.body.style.backgroundImage = "https://github.com/irinainina/ready-projects/blob/momentum/momentum/assets/images/morning/01.jpg";
+        document.body.style.backgroundImage = 'url(assets/morning/01.jpg)';
         greeting.textContent = "Good Morning";
     } else if (hour < 18) {
-        document.body.style.backgroundImage = "https://github.com/irinainina/ready-projects/blob/momentum/momentum/assets/images/afternoon/01.jpg";
+        document.body.style.backgroundImage = 'url(assets/day/01.jpg)';
         greeting.textContent = "Good Afternoon";
         document.body.style.color = 'white';
     } else {
-        document.body.style.backgroundImage = "url('https://github.com/irinainina/ready-projects/blob/momentum/momentum/assets/images/evening/01.jpg');";
+        document.body.style.backgroundImage = 'url(assets/evening/01.jpg)';
         greeting.textContent = "Good Evening";
         document.body.style.color = 'white';
     }
@@ -106,7 +106,7 @@ focusTag.addEventListener('blur', setFocus);
 focusTag.addEventListener('focus', setFocus);
 
 
-//setBgGreet();
+setBgGreet();
 getName();
 getFocus();
 showTime();
