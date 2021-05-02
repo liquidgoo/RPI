@@ -9,8 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>Welcome</title>
 </head>
+
 <body>
-    <time id="time"></time>
+        
+    <div id="button-wrapper">
+        <button id="button"><img src="assets/arrow.png"></button>
+    </div>  
+    <div class="wrapper">
+    <div id="datetime-wrapper">
+        <div id="time-wrapper">
+        <time id="time"></time>
+        </div>
+        <time id="date"></time>
+    </div> 
+
     <h1>
         <span id="greeting"></span>
         <span id="name" contenteditable="true">boba</span>
@@ -20,6 +32,7 @@
     <h2 id="focus-wrapper">
        <span id="focus" contenteditable="true"></span>
     </h2>
+</div>
 <script src="main.js"></script>    
 </body>
 </html>

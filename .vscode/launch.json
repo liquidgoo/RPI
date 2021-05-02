@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "file:///D:/smth/%D0%BF%D0%BE%D1%85%D0%BE%D0%B4%D1%83%20%D1%83%D0%BD%D0%B8%D0%BA/RPI/momentum/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
