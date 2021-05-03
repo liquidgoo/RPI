@@ -8,7 +8,59 @@ body {
     font-family: 'Quicksand', sans-serif;
     color: black;
     transition: background-image 1s ease-in-out;
+    height: 100vh;
 }
+
+.misc {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    margin: 10px;
+    transition: transform 0.2s ease;
+}
+button:hover {
+    filter: grayscale(.8);
+}
+button:active,
+button:focus {
+  outline: 0;
+}
+button:active{
+  transform: scale(1.2)
+}
+
+#nextQuote {
+    filter: grayscale(.8);
+}
+
+#nextQuote:hover {
+    filter: grayscale(.2);
+}
+
+#weather {
+    background-color: #eee;
+    opacity: 0.6;
+    color: black;
+    text-align: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5em;
+    width: 8rem;
+    height: 8rem;
+}
+
+
 
 .wrapper {
     display: flex;
@@ -16,33 +68,19 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
-}
-
-#button-wrapper {
-    position: absolute;
-}
-
-button {
-    background-color: transparent;
-    border: none;
-    margin: 10px;
-    transform: scale(1.5);
-}
-button:hover {
-    transform: scale(1.7);
 }
 
 #datetime-wrapper {
     font-size: 8rem;
     line-height: 4rem;
-    width: 562px
-}
-
-#time-wrapper {
     text-align: left;
 }
-
+#time-wrapper {
+    width: 35.25rem;
+}
+#date-wrapper {
+    margin-left: 0.5rem;
+}
 
 #date {
     font-size: 4rem;
@@ -56,7 +94,7 @@ h1 {
 
 h2 {
     margin-bottom: 0.5rem;
-    opacity: 0.75;
+    opacity: 0.8;
     height: 28px;
 }
 
@@ -64,8 +102,65 @@ h2 {
     height: 28px;
 }
 
+figure {
+    width: 50vw;
+    height: 20vh;
+    font: 1.2rem Georgia, serif;
+    margin: 1rem;
+    background: #eee;
+    color: black;
+    opacity: 0.6;
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+figcaption, blockquote {
+    margin: 1em;
+}
+
+figcaption {
+    text-align: right;
+}
+
+@media(max-width: 1280px) {
+    figure {
+        height: 25vh;
+        width: 60vw;
+        font-size: 1.05rem;
+    }
+}
+
 @media(max-width: 700px) {
+    #datetime-wrapper {
+        line-height: 1rem;
+    }
+    #time-wrapper {
+        width: 17.625rem;
+    }
+    #date-wrapper {
+        margin-left: 0.5rem;
+    }
     #time {
-        font-size: 6rem;
+        font-size: 4rem;
+    }
+    #date {
+        font-size: 2rem;
+    }
+    h1 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    figure {
+        height: 30vh;
+        width: 65vw;
+        font-size: 0.9rem;
     }
 }

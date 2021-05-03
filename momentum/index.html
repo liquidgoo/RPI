@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owfont-regular.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -11,28 +12,45 @@
 </head>
 
 <body>
-        
-    <div id="button-wrapper">
-        <button id="button"><img src="assets/arrow.png"></button>
-    </div>  
-    <div class="wrapper">
-    <div id="datetime-wrapper">
-        <div id="time-wrapper">
-        <time id="time"></time>
-        </div>
-        <time id="date"></time>
+    <div class="misc">
+    <button id="nextBg"></button>
+
+    <div id="weather">
+        <div id="city" contenteditable="true"></div>
+        <i class="weather-icon owf" style="transform: scale(2); margin: 0.5rem;"></i>
+        <div id="temperature"></div>
+        <div id="humidity"></div>
+        <div id="wind"></div>
+    </div>
+
     </div> 
 
-    <h1>
-        <span id="greeting"></span>
-        <span id="name" contenteditable="true">boba</span>
-    </h1>
+    <div class="wrapper">
+        <div id="datetime-wrapper">
+            <div id="time-wrapper">
+                <time id="time"></time>
+            </div>
+            <div id="date-wrapper">
+                <time id="date"></time>
+            </div>
+        </div> 
 
-    <h2>What Is Your Focus Today</h2>
-    <h2 id="focus-wrapper">
-       <span id="focus" contenteditable="true"></span>
-    </h2>
-</div>
+        <h1>
+            <span id="greeting"></span>
+            <span id="name" contenteditable="true"></span>
+        </h1>
+
+        <h2>What Is Your Focus Today</h2>
+        <h2 id="focus-wrapper">
+           <span id="focus" contenteditable="true"></span>
+        </h2>
+
+        <figure>
+            <blockquote id="quote"></blockquote>
+            <figcaption id="author"></figcaption>
+        </figure>
+        <button id="nextQuote"></button>
+    </div>
 <script src="main.js"></script>    
 </body>
 </html>
