@@ -47,7 +47,23 @@ button:active{
     filter: grayscale(.2);
 }
 
-#weather {
+.field {
+    transition: all 0.2s ease;
+}
+
+.field:hover {
+    background: #eee;
+    border-radius: 0.3rem;
+    opacity: 0.6;
+    color: black;
+}
+
+#city:hover {
+    background: black;
+    color: white;
+}
+
+.weather {
     background-color: #eee;
     opacity: 0.6;
     color: black;
@@ -76,7 +92,7 @@ button:active{
     text-align: left;
 }
 #time-wrapper {
-    width: 35.25rem;
+    width: 35.3rem;
 }
 #date-wrapper {
     margin-left: 0.5rem;
