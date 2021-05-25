@@ -128,16 +128,12 @@ function setBgGreet() {
 
     if (hour < 6) {
         greeting.textContent = "Good Night";
-        document.body.style.color = 'white';
     } else if (hour < 12) {
         greeting.textContent = "Good Morning";
-        document.body.style.color = 'black';
     } else if (hour < 18) {
         greeting.textContent = "Good Afternoon";
-        document.body.style.color = 'black';
     } else {
         greeting.textContent = "Good Evening";
-        document.body.style.color = 'white';
     }
 
     setTimeout(function() {nextBg.disabled = false;}, 1000);
