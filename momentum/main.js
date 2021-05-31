@@ -102,7 +102,7 @@ function getMonth(n) {
     return result;
 }
 
-function chooseBgs(hour) {
+function fillBGs(hour) {
     for (; hour < 6; hour++) {
         bgs.push('url(assets/night/' + addZero((Math.ceil(Math.random() * 20))) + '.jpg)');
     }
@@ -122,7 +122,7 @@ function setBgGreet() {
     let today = new Date(),
         hour = today.getHours();
 
-    if (bgs.length == 0) chooseBgs(hour);
+    if (bgs.length == 0) fillBGs(hour);
 
     document.body.style.background = bgs.shift();
 

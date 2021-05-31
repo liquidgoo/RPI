@@ -23,6 +23,7 @@ body {
     font-family: "GothamRounded";
     display: flex;
     justify-content: center;    
+    display: flex;
 }
 
 .wrapper {
