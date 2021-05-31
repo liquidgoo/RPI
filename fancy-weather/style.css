@@ -50,8 +50,8 @@ body{
 	width:100wh;
 	height:100vh;
 	transition: background-image 1s ease-in-out;
-	background:-webkit-gradient(linear,left top,left bottom,from(rgba(8,15,26,.59)),to(rgba(17,17,46,.46))) 50% fixed,url(img/bg-default.jpg) no-repeat 50% fixed;
-	background:linear-gradient(180deg,rgba(8,15,26,.59),rgba(17,17,46,.46)) 50% fixed,url(img/bg-default.jpg) no-repeat 50% fixed;background-size:cover;padding-top:1px;margin-top:-1px;-webkit-animation:smoothAppearance 2s ease-in-out;animation:smoothAppearance 2s ease-in-out
+	background:-webkit-gradient(linear,left top,left bottom,from(rgba(8,15,26,.59)),to(rgba(17,17,46,.46))) 50% fixed,url(assets/bg-default.jpg) no-repeat 50% fixed;
+	background:linear-gradient(180deg,rgba(8,15,26,.59),rgba(17,17,46,.46)) 50% fixed,url(assets/bg-default.jpg) no-repeat 50% fixed;background-size:cover;padding-top:1px;margin-top:-1px;-webkit-animation:smoothAppearance 2s ease-in-out;animation:smoothAppearance 2s ease-in-out
 }
 
 
@@ -133,7 +133,7 @@ pre{
 	background-color:#b4b8bb
 }
 .button--update{
-	background:rgba(180,184,187,.5) url(img/update-button.svg) no-repeat bottom;background-size:4.4rem
+	background:rgba(180,184,187,.5) url(assets/update-button.svg) no-repeat bottom;background-size:4.4rem
 	}
 .button--f{
 	margin-left:1rem;
@@ -168,7 +168,7 @@ pre{
 .spinner{
 	width:2rem;
 	height:2rem;
-	background:url(img/spinner.svg) 50% no-repeat;
+	background:url(assets/spinner.svg) 50% no-repeat;
 	-webkit-animation:spin 1.4s ease-in-out;animation:spin 1.4s ease-in-out
 }
 .language-menu{
@@ -231,7 +231,7 @@ pre{
 	right:10.5rem;
 	width:3rem;
 	height:4rem;
-	background:url(img/microphone.svg) 50% no-repeat;
+	background:url(assets/microphone.svg) 50% no-repeat;
 	background-size:50%
 }
 .inactive{
