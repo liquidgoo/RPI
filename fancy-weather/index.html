@@ -1,86 +1,105 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fancy Weather</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
-  
-  <link href="style.css" rel="stylesheet">
-
-  	<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
-	<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <title>fancy weather</title>
 </head>
-
-<body id="body">
-	<!-- Load the `mapbox-gl-geocoder` plugin. -->
-	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
-	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
-	 
-	<!-- Promise polyfill script is required -->
-	<!-- to use Mapbox GL Geocoder in IE 11. -->
-	<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-
- 
-	
-	<div class="button-cluster">
-		<div class="button-cluster__left-sub-cluster">
-			<button class="button button--update">
-				<div class="spinner"></div>
-			</button>
-			<select class="language-menu button drop-down-menu__face-button" onchange="changeLang()">
-				<option value="en-US">en</option>
-				<option value="ru-RU">ru</option>
-			</select>
-			<button class="button button--f">°F</button>
-			<button class="button button--c">°C</button>
-		</div>
-		<div class="button-cluster__right-sub-cluster">
-			<div id="geocoder" style="margin:0px;"></div>
-			<button id="search" class="button search-input__button">Search</button>
-			<button class="search-input__voice-button"></button>
-		</div>
-	</div>
-	<div class="main-wrapper">
-		<div class="weather-data-cluster">
-			<p class="weather-data-cluster__location">Undefined</p>
-			<p class="weather-data-cluster__date-time">Undefined</p>
-			<p class="weather-data-cluster__temperature-today">??</p>
-			<img class="weather-data-cluster__weather-icon" alt="&nbsp;">
-			<div class="weather-data-cluster__weather-data">
-				<p id="overcast">overcast
-				<p><span id="like">Feels like: </span><span id="flike">7</span>°
-				<p><span id="w">Wind: </span><span id="wind">2 </span>M/S
-				<p><span id="hum">Humidity: </span><span id="humid">83</span>%
-			</div>
-			<div class="forecast">
-				<p class="forecast__day">Tuesday</p>
-				<p class="forecast__temperature">7°</p>
-				<img class="forecast__icon" alt="&nbsp;">
-			</div>
-			<div class="forecast">
-				<p class="forecast__day">Wednesday</p>
-				<p class="forecast__temperature">6°</p>
-				<img class="forecast__icon" alt="&nbsp;">
-			</div>
-			<div class="forecast">
-				<p class="forecast__day">Thursday</p>
-				<p class="forecast__temperature">8°</p>
-				<img class="forecast__icon" alt="&nbsp;">
-			</div>
-		</div>
-		<div class="map-cluster">
-			<div class="map-cluster__map">
-				<div id="map" class="map-iframe"></div>
-			</div><div class="map-cluster__coordinates">
-				<p><span id="lat">Latitude: </span><span id="latWhole">??</span>°<span id="latPart">??</span>'</p>
-				<p><span id="lon">Longitude: </span><span id="longWhole">??</span>°<span id="longPart">??</span>'</p>
-			</div></div>
-		
-  	<script src="main.js"></script>
+<body>
+    <div id="content">
+        <div id="top-bar">
+            <div id="settings">
+                <div id="refresh">
+                    <img src="assets/Refresh_icon.png">
+                </div>
+                <div id="language-choice">
+                    <div id="active-option">RU</div>
+                </div>
+                <div id="temperature-choice">
+                    <div id="temperature-choice-slider"></div>
+                    <div id="forenheit">°C</div>
+                    <div id="celcius">°F</div>
+                </div>
+            </div>
+            <div id="search">
+                <div id="search-bar">
+                    <input type="text" name="search" id="searchInput" />
+                    <div id="voice-img">
+                        <img src="assets/mic.png" />
+                    </div>
+                </div>
+                <div id="search-button">
+                    <h4>
+                        Search
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="weather">
+                <div id="weather-header">
+                    <h1 id="country-city">MINSK, BELARUS</h1>
+                    <h2 id="date-time">Mon 28 October 17:23:12</h2>
+                </div>
+                <div id="today-weather-forecast">
+                    <div id="today-temperature">
+                        <span id="temperature-value">10°</span>
+                    </div>
+                    <div id="main-icon-and-weather-info">
+                    <div id="main-weather-image">
+                        <img src="" />
+                    </div>
+                    <div id="weather-info">
+                        <p id="description">OVERCAST</p>
+                        <p id="feels-like"><span id="feels-like-label">FEELS LIKE</span>: <span id="feels-like-value">7°</span></p>
+                        <p id="wind"> <span id="wind-label">WIND</span>: <span id="wind-value">2</span> m/s</p>
+                        <p id="humidity"> <span id="humidity-label">HUMIDITY</span>: <span id="humidity-value">83</span>%</p>
+                    </div>
+                </div>
+                </div>
+                <div id="future-forecasts">
+                    <div class="small-forecast">
+                        <p class="week-day">TUESDAY</p>
+                        <p class="future-temperature">7°</p>
+                        <div class="small-weather-icon">
+                            <img src="" />
+                        </div>
+                    </div>
+                    <div class="small-forecast">
+                        <p class="week-day">WEDNSEDAY</p>
+                        <p class="future-temperature">7°</p>
+                        <div class="small-weather-icon">
+                            <img src="" />
+                        </div>
+                    </div>
+                    <div class="small-forecast">
+                        <p class="week-day">THURSDAY</p>
+                        <p class="future-temperature">7°</p>
+                        <div class="small-weather-icon">
+                            <img src="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map-nav">
+                <div id="map-container">
+                    <div id="map">
+                    </div>
+                    <div id="coordinates">
+                        <div id="latitutude"><span id="latitude-label">Latitude</span>: <span id="latitude-value">53°54'</span></div>
+                        <div id="Longitude"><span id="longitude-label">Longitude</span>: <span id="longitude-value">27°34'</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=1e754afd-3073-488f-bc7c-0fdc6e1cf099&lang=ru_RU" type="text/javascript"></script>
+<script src="main.js"></script>
+
 </html>
